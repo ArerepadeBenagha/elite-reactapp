@@ -15,7 +15,7 @@ terraform {
     organization = "EliteSolutionsIT"
 
     workspaces {
-      name = "elite-buildRelease_fbreactapp"
+      name = "elite-reactapp"
     }
   }
 }
