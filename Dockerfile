@@ -8,8 +8,8 @@ WORKDIR /app
 COPY package.json .
 COPY . .
 
-RUN npm install --silent
+RUN npm install
 EXPOSE 3000
 
 # start app
-CMD ["npm", "start"]
+CMD ["npm","start"]
