@@ -1,5 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Routing from './component/Routing'
+import { Provider } from 'react-redux';
+import store from './store/store';
+import App from './component/App';
+import './index.css';
 
-ReactDOM.render(<Routing/>, document.getElementById('root'))
+ReactDOM.render(
+    <Provider store={store}>
+        <App/>
+    </Provider>, document.querySelector('#root')
+)
